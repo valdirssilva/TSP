@@ -1,5 +1,5 @@
 MODEL PARAMETERS
-Approach TABU  # { HC, HC_LS, ILS, MultiStart, SA,GRASP, TABU } 
+Approach VNS  # { HC, HC_LS, ILS, MultiStart, SA,GRASP, TABU, VNS } 
 solver Gurobi # {Gurobi, CPLEX}
 total_time_limit 3600.0 # Total time limit for approach in seconds
 MIP_gap_tolerance 1e-8
