@@ -1,0 +1,12 @@
+11 
+src/Instancias/burma14.tsp
+src/Instancias/burma14.tsp
+src/Instancias/ulysses16.tsp
+src/Instancias/ulysses22.tsp
+src/Instancias/gr96.tsp
+src/Instancias/gr137.tsp
+src/Instancias/gr202.tsp
+src/Instancias/gr229.tsp
+src/Instancias/gr431.tsp
+src/Instancias/ali535.tsp
+src/Instancias/gr666.tsp

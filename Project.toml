@@ -1,0 +1,11 @@
+name = "TSP"
+uuid = "8d3d70fc-ba2e-4b31-9005-891a27754766"
+authors = ["valdirssilva <valdir.soares.da.silva25@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+CPUTime = "a9c8d775-2e2e-55fc-8582-045d282d599e"
+Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+Gurobi = "2e9cd046-0924-5485-92f1-d5272153d98b"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"

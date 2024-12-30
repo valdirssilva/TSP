@@ -1,0 +1,19 @@
+11 #17
+src/Instancias/bays29.tsp
+src/Instancias/gr17.tsp
+src/Instancias/gr21.tsp
+src/Instancias/gr24.tsp
+src/Instancias/fri26.tsp
+src/Instancias/bayg29.tsp
+src/Instancias/bays29.tsp
+src/Instancias/dantzig42.tsp
+src/Instancias/swiss42.tsp
+src/Instancias/gr48.tsp
+src/Instancias/hk48.tsp
+src/Instancias/brazil58.tsp
+src/Instancias/gr120.tsp
+src/Instancias/si175.tsp
+src/Instancias/brg180.tsp
+src/Instancias/si535.tsp
+src/Instancias/pa561.tsp
+src/Instancias/si1032.tsp

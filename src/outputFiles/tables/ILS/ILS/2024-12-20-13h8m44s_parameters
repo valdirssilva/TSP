@@ -1,0 +1,6 @@
+Statistics for TSP 
+Date: 2024-12-20
+Approach: ILS
+
+Instance & N & UB_hC & HC_time & UB_ILS & ILS_time & total_time \\
+burma14 & 14 & 3588.0 & 0.0 & 3323.0 & 7.38573 & 0.169021 & 0.169021 \\

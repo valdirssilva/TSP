@@ -1,0 +1,5 @@
+3 #4
+src/Instancias/dsj1000.tsp
+src/Instancias/pla7397.tsp
+src/Instancias/pla33810.tsp
+src/Instancias/pla85900.tsp
