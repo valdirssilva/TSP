@@ -1,11 +1,16 @@
 MODEL PARAMETERS
-Approach VNS  # {MIP_solver, HC, HC_LS, ILS, MultiStart, SA,GRASP, TABU, VNS } 
+Approach RF  # {MIP_solver, HC, HC_LS, ILS, MultiStart, SA,GRASP, TABU, VNS, RF } 
 solver Gurobi # {Gurobi, CPLEX}
-total_time_limit 3600.0 # Total time limit for approach in seconds
+total_time_limit 15000.0 # Total time limit for approach in seconds
 MIP_gap_tolerance 1e-8
 integer_feasibility_tolerance 1e-6
 number_of_threads 1
 screen_output 1
-approach_HC C_GRASP  # {VMP, BN, IMB, random, C_GRASP } 
+approach_HC IMB  # {VMP, BN, IMB, random, C_GRASP } 
 Approach_LS RVND  {bestImprovement, RVND}
 Approach_improvemente Swap #{Swap, 2-opt, Or-opt-2, Or-opt-3, Reinsertion } 
+RELAX-AND-FIX-PARAMETERS
+rf_max_time 15000.0 # Time limit for RF in seconds
+rf_restricted_model_max_time 30.0 # Time limit for RF restricted models in seconds 
+rf_Number_of_Int 10 #
+rf_Number_of_fix 5  # 

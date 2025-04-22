@@ -1,0 +1,21 @@
+Statistics for TSP 
+Date: 2025-04-19
+Approach: Formulation with MIP solver
+Solver: Gurobi
+Time limit: 60.0
+MIP gap tolerance: 1.0e-8
+Integer feasibility tolerance: 1.0e-6
+Number of threads: 1
+Screen output: 1
+
+Instance & N & LB & UB & gap & status & total_time \\
+burma14 & 14 & 3323.0 & 3323.0 & 0.0 & OPTIMAL & 11.15 \\
+burma14 & 14 & 3323.0 & 3323.0 & 0.0 & OPTIMAL & 0.23 \\
+ulysses16.tsp & 16 & 6859.0 & 6859.0 & 0.0 & OPTIMAL & 3.17 \\
+gr17 & 17 & 2085.0 & 2085.0 & 0.0 & OPTIMAL & 0.38 \\
+gr21 & 21 & 2707.0 & 2707.0 & 0.0 & OPTIMAL & 0.04 \\
+ulysses22.tsp & 22 & 6668.0 & 7013.0 & 4.9194 & TIME_LIMIT & 60.01 \\
+gr24 & 24 & 1272.0 & 1272.0 & 0.0 & OPTIMAL & 0.26 \\
+fri26 & 26 & 937.0 & 937.0 & 0.0 & OPTIMAL & 1.94 \\
+bayg29 & 29 & 1610.0 & 1610.0 & 0.0 & OPTIMAL & 3.22 \\
+bays29 & 29 & 2020.0 & 2020.0 & 0.0 & OPTIMAL & 2.74 \\

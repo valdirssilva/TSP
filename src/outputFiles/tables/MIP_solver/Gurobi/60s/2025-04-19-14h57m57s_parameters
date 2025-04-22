@@ -1,0 +1,39 @@
+Statistics for TSP 
+Date: 2025-04-19
+Approach: Formulation with MIP solver
+Solver: Gurobi
+Time limit: 60.0
+MIP gap tolerance: 1.0e-8
+Integer feasibility tolerance: 1.0e-6
+Number of threads: 1
+Screen output: 1
+
+Instance & N & LB & UB & gap & status & total_time \\
+burma14 & 14 & 3323.0 & 3323.0 & 0.0 & OPTIMAL & 9.87 \\
+burma14 & 14 & 3323.0 & 3323.0 & 0.0 & OPTIMAL & 0.21 \\
+ulysses16.tsp & 16 & 6859.0 & 6859.0 & 0.0 & OPTIMAL & 3.14 \\
+gr17 & 17 & 2085.0 & 2085.0 & 0.0 & OPTIMAL & 0.4 \\
+gr21 & 21 & 2707.0 & 2707.0 & 0.0 & OPTIMAL & 0.04 \\
+ulysses22.tsp & 22 & 6668.0 & 7013.0 & 4.9194 & TIME_LIMIT & 60.01 \\
+gr24 & 24 & 1272.0 & 1272.0 & 0.0 & OPTIMAL & 0.29 \\
+fri26 & 26 & 937.0 & 937.0 & 0.0 & OPTIMAL & 2.02 \\
+bayg29 & 29 & 1610.0 & 1610.0 & 0.0 & OPTIMAL & 3.35 \\
+bays29 & 29 & 2020.0 & 2020.0 & 0.0 & OPTIMAL & 3.15 \\
+dantzig42 & 42 & 664.0 & 699.0 & 5.0072 & TIME_LIMIT & 60.03 \\
+swiss42 & 42 & 1273.0 & 1273.0 & 0.0 & OPTIMAL & 2.4 \\
+gr48 & 48 & 5009.0 & 5055.0 & 0.91 & TIME_LIMIT & 60.04 \\
+hk48 & 48 & 11461.0 & 11461.0 & 0.0 & OPTIMAL & 17.58 \\
+eil51 & 51 & 426.0 & 426.0 & 0.0 & OPTIMAL & 11.45 \\
+berlin52 & 52 & 7542.0 & 7542.0 & 0.0 & OPTIMAL & 11.71 \\
+brazil58 & 58 & 24393.0 & 25395.0 & 3.9457 & TIME_LIMIT & 60.04 \\
+st70 & 70 & 651.0 & 737.0 & 11.6689 & TIME_LIMIT & 60.06 \\
+eil76 & 76 & 538.0 & 538.0 & 0.0 & OPTIMAL & 28.18 \\
+pr76 & 76 & 105418.0 & 122568.0 & 13.9922 & TIME_LIMIT & 60.17 \\
+gr96 & 96 & 54483.0 & 136698.0 & 60.1435 & TIME_LIMIT & 60.12 \\
+rat99 & 99 & 1206.0 & 1211.0 & 0.4129 & TIME_LIMIT & 60.12 \\
+kroA100 & 100 & 20376.0 & 35330.0 & 42.3266 & TIME_LIMIT & 60.19 \\
+kroB100 & 100 & 21361.0 & 32990.0 & 35.2501 & TIME_LIMIT & 60.12 \\
+kroC100 & 100 & 19916.02 & 67947.0 & 70.6889 & TIME_LIMIT & 60.2 \\
+kroD100 & 100 & 20176.0 & 49300.0 & 59.0751 & TIME_LIMIT & 60.12 \\
+kroE100 & 100 & 21515.0 & 28270.0 & 23.8946 & TIME_LIMIT & 60.23 \\
+rd100 & 100 & -1.0e8 & 1.0e8 & 100.0 & TIME_LIMIT & 60.14 \\

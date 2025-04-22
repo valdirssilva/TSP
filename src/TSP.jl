@@ -23,6 +23,8 @@ import Constructive
 import BestImprovement
 import Disturbance
 import MetaHeuristics
+import RelaxAndFix
+#import FixAndOptimize
 
 # >>>>> INSTRUCTIONS <<<<<
 # Args:                        [1]              [2]             [3]                           
@@ -116,7 +118,43 @@ function main(ARGS)
             println("tour", solution.route)
             OutputStatistics.print_tur(data,data_type, solution)
 
+           #=  for i in 1:data_type.DIMENSION
+                println("model[:u][$i] = ",  value(model[:u][i]))
+            end =#
+
             println("\nFINISH <<<<<<<<<<<<<<<<<<<<<<<<<")
+
+
+        elseif params.approach == "RF"
+            if params.solver == "Gurobi"
+                model = Model(() -> Gurobi.Optimizer(GRB_ENV))
+            elseif params.solver == "CPLEX"
+                model = Model(() -> CPLEX.Optimizer())
+            end
+
+            start_time = time_ns()
+            # Setup std formulation solution data structure
+            solution = OutputStatistics.init_std_form_solution(data_type)
+
+            # Formulate the model
+            Formulation.create_stdform_model!(data,data_type, model)
+            #
+          
+            #solver
+            #Formulation.solve_stdform_model!(model,data, data_type, solution, stats)
+            RelaxAndFix.relax_and_fix!(model,data, data_type, solution, stats,params)
+
+            finish_time = time_ns()
+            total_time = (finish_time - start_time) * 1e-9
+            stats.total_time = total_time
+
+            #print_tur in screen
+
+            println("tour", solution.route)
+            OutputStatistics.print_tur(data,data_type, solution)
+
+            println("\nFINISH <<<<<<<<<<<<<<<<<<<<<<<<<")
+
         elseif params.approach == "HC" || params.approach == "HC_LS"
             if params.approach_HC == "VMP"
 

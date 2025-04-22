@@ -1,0 +1,8 @@
+Statistics for TSP 
+Date: 2025-04-19
+Approach: heuristicHC
+HC Approach: IMB
+
+Instance & N & UB & total_time \\
+burma14 & 14 & 3588.0 & 0.000151 \\
+gr431 & 431 & 198626.0 & 3.230028 \\

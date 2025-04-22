@@ -18,6 +18,17 @@ Base.@kwdef mutable struct StatisticsData
     LS_time::Float64 = 0.0
     HC_time::Float64 = 0.0
     improvement::Float64 = 0.0
+    rf_UB::Float64 = 1e8
+    rf_iterations::Int64 = 0
+    rf_time::Float64 = 0.0
+    rf_backtrack_attempts::Int64 = 0
+    rf_backtrack__rounds::Int64 = 0
+    fo_UB::Float64 = 1e8
+    fo_improvement::Float64 = 0.0
+    fo_iterations::Int64 = 0
+    fo_rounds::Int64 = 0
+    fo_time::Float64 = 0.0
+
     
 end
 
@@ -62,7 +73,7 @@ function setup_stats_file(params::ExperimentParameters, inputlist_file::String, 
     params_file = split(parameters_file, "/")
     params_file = "_" * params_file[end]    
     output_file_path = "src/outputFiles/tables/$(params.approach)/"
-    if params.approach == "MIP_solver"  #= || params.approach == "VMP" =#
+    if params.approach == "MIP_solver"   || params.approach == "RF" 
         output_file_path = output_file_path 
 
         output_file_path = output_file_path * "/$(params.solver)/$(Int64(params.total_time_limit))s/"
@@ -138,7 +149,7 @@ function print_stats( data_type::InstanceTypeData,  params::ExperimentParameters
     print(out, "\n", data_type.instName, " & ",
     data_type.DIMENSION, " & ")
 
-    if params.approach == "MIP_solver"
+    if params.approach == "MIP_solver" || params.approach == "RF"
         print(out, round(stats.best_LB, digits = 2), " & ",
         round(stats.best_UB, digits = 2), " & ",
         round(stats.gap, digits = 4), " & ",

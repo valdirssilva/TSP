@@ -1,5 +1,12 @@
-49
+2
 src/Instancias/burma14.tsp
+src/Instancias/gr431.tsp
+
+src/Instancias/burma14.tsp
+
+src/Instancias/fl417.tsp
+
+
 src/Instancias/burma14.tsp
 src/Instancias/ulysses16.tsp
 src/Instancias/gr17.tsp
